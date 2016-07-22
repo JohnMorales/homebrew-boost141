@@ -34,15 +34,15 @@ class Boost141 < Formula
     # Patches boost::atomic for LLVM 3.4 as it is used on OS X 10.9 with Xcode 5.1
     # https://github.com/Homebrew/homebrew/issues/27396
     # https://github.com/Homebrew/homebrew/pull/27436
-    patch :p2 do
-      url "https://github.com/boostorg/atomic/commit/6bb71fdd.diff"
-      sha256 "eb139160a33d8ef3e810ce3e47da278563d03d7be6d0a75c109f708030a7abcb"
-    end
+    #patch :p2 do
+    #  url "https://github.com/boostorg/atomic/commit/6bb71fdd.diff"
+    #  sha256 "eb139160a33d8ef3e810ce3e47da278563d03d7be6d0a75c109f708030a7abcb"
+    #end
 
-    patch :p2 do
-      url "https://github.com/boostorg/atomic/commit/e4bde20f.diff"
-      sha256 "8c5efeea91d44b2a48fdeee9cde71e831dad78f0930e8f65b7223ba0ecdfec9b"
-    end
+    #patch :p2 do
+    #  url "https://github.com/boostorg/atomic/commit/e4bde20f.diff"
+    #  sha256 "8c5efeea91d44b2a48fdeee9cde71e831dad78f0930e8f65b7223ba0ecdfec9b"
+    #end
 
     # Patch fixes upstream issue reported here (https://svn.boost.org/trac/boost/ticket/9698).
     # Will be fixed in Boost 1.56 and can be removed once that release is available.
