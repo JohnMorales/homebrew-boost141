@@ -48,10 +48,10 @@ class Boost141 < Formula
     # Will be fixed in Boost 1.56 and can be removed once that release is available.
     # See this issue (https://github.com/Homebrew/homebrew/issues/30592) for more details.
 
-    patch :p2 do
-      url "https://github.com/boostorg/chrono/commit/143260d.diff"
-      sha256 "f6f40b576725b15ddfe24497ddcd597f387dfdf674f6dd301b8dcb723593ee22"
-    end
+    # patch :p2 do
+    #   url "https://github.com/boostorg/chrono/commit/143260d.diff"
+    #   sha256 "f6f40b576725b15ddfe24497ddcd597f387dfdf674f6dd301b8dcb723593ee22"
+    # end
 
     # Patch boost::serialization for Clang
     # https://svn.boost.org/trac/boost/ticket/8757
@@ -59,7 +59,7 @@ class Boost141 < Formula
       url "https://gist.githubusercontent.com/philacs/375303205d5f8918e700/raw/d6ded52c3a927b6558984d22efe0a5cf9e59cd8c/0005-Boost.S11n-include-missing-algorithm.patch"
       sha256 "cb134e3982e01ba5b3d5abe51cc8343c9e24ecd34aa4d81f5e8dd4461f593cf1"
     end
-    patch :p1 do
+    patch :p2 do
       url "https://raw.githubusercontent.com/JohnMorales/homebrew-boost141/master/test_framework.patch"
       sha256 "1ff9612aaeca902a9dcbca0b9e1b2f550363550e137d4918c9498f496f2cbea2"
     end
