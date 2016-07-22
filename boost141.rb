@@ -22,7 +22,7 @@ class UniversalPython3 < Requirement
   end
 end
 
-class Boost155 < Formula
+class Boost141 < Formula
   desc "Collection of portable C++ source libraries"
   homepage "http://www.boost.org"
   revision 1
@@ -84,7 +84,7 @@ class Boost155 < Formula
   depends_on UniversalPython3 if build.universal? && build.with?("python3")
 
   if build.with?("python3") && build.with?("python")
-    odie "boost155: --with-python3 cannot be specified when using --with-python"
+    odie "boost141: --with-python3 cannot be specified when using --with-python"
   end
 
   if build.with? "icu"
