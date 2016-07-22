@@ -216,7 +216,7 @@ class Boost141 < Formula
     end
 
     system "./bootstrap.sh", *bargs
-    system "./b2", *args
+    system "./bjam", *args
   end
 
   def caveats
