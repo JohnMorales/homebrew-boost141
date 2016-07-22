@@ -59,6 +59,10 @@ class Boost141 < Formula
       url "https://gist.githubusercontent.com/philacs/375303205d5f8918e700/raw/d6ded52c3a927b6558984d22efe0a5cf9e59cd8c/0005-Boost.S11n-include-missing-algorithm.patch"
       sha256 "cb134e3982e01ba5b3d5abe51cc8343c9e24ecd34aa4d81f5e8dd4461f593cf1"
     end
+    patch :p1 do
+      url "https://raw.githubusercontent.com/JohnMorales/homebrew-boost141/master/test_framework.patch"
+      sha256 "1ff9612aaeca902a9dcbca0b9e1b2f550363550e137d4918c9498f496f2cbea2"
+    end
   end
   bottle do
     cellar :any
